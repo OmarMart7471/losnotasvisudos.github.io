@@ -72,19 +72,24 @@ body {
 
 .nav .nav-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 5rem;
-    padding: 2rem 2rem 0 5rem;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: 2rem 30rem 2rem 30rem;
+    background: rgba(0, 73, 144);
+    border-radius: 16px;
 }
 
 .nav-link {
     color: var(--color-white);
     text-decoration: none;
+    font-weight: bold;
     font-size: 1.6rem;
 }
 
 .nav-link:hover {
     color: var(--color-link-hover);
+    transform: translateY(-3px);
 }
 
 .featured-post {
