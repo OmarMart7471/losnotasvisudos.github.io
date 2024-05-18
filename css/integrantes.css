@@ -1,0 +1,155 @@
+:root {
+    --color-background: #f7fafc;
+    --color-white: #fff;
+    --color-black-translucent: rgba(0, 0, 0, 0.5);
+    --color-text-primary: #23145b;
+    --color-gray-text: #4a5568;
+    --color-link-hover: #1ca39e; 
+    --color-footer-background: #09456c;
+    --color-header-background: #160d18; 
+    --color-highlight: #026f6e; 
+    --color-gradient-start: #ffffff;
+    --color-gradient-end: #f1f5f9;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 1.6rem; /* 1 rem = 10px */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-background);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header {
+    background-color: var(--color-header-background);
+    color: var(--color-white);
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.header .nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.header .nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+}
+
+.header .nav a:hover {
+    color: var(--color-link-hover);
+}
+
+.main-content {
+    padding: 3rem 0;
+}
+
+.intro {
+    text-align: center;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    background: url('../img/visudos.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 8rem 1rem;
+    color: var(--color-white);
+}
+
+.intro h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.8rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team {
+    position: relative;
+    z-index: 1;
+    margin-top: -8rem;
+}
+
+.team .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: linear-gradient(145deg, var(--color-gradient-start), var(--color-gradient-end));
+    padding: 2rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid var(--color-highlight);
+    transition: border-color 0.3s ease;
+}
+
+.card:hover .card-image {
+    border-color: #f0c710;
+}
+
+.card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+}
+
+.card p {
+    font-size: 1.6rem;
+    color: var(--color-gray-text);
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    background-color: var(--color-footer-background);
+    color: var(--color-white);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
