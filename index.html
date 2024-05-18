@@ -3,9 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los notas visudos</title>
+    <title>Visudos</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Notas Visudo</h1>
+            <span class="legend">Bienvenidos a nuestro Blog</span>
+        </div>
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="#" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">Categoría</a>
+                <a href="#" class="nav-link">Integrantes</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="featured-post">
+            <img src="img/imagePrueba.jpg" alt="Imagen destacada" class="featured-image">
+            <div class="featured-content">
+                <h2 class="featured-title">Welcome fellow Tailwind CSS and Ghost fan</h2>
+                <p class="featured-description">This starter template is an attempt to replicate the default Ghost theme "Casper" using Tailwind CSS and vanilla Javascript.</p>
+                <span class="read-time">1 MIN READ</span>
+            </div>
+        </section>
+        <section class="grid">
+            <article class="card">
+                <img src="img/imagePrueba.jpg" alt="Post image 1" class="card-image">
+                <h2 class="card-title">Título del post</h2>
+                <p class="card-description">Descripción del post</p>
+                <span class="read-time">1 MIN READ</span>
+            </article>
+            <article class="card">
+                <img src="img/imagePrueba.jpg" alt="Post image 2" class="card-image">
+                <h2 class="card-title">Título del post</h2>
+                <p class="card-description">Descripción del post</p>
+                <span class="read-time">1 MIN READ</span>
+            </article>
+            <article class="card">
+                <img src="img/imagePrueba.jpg" alt="Post image 3" class="card-image">
+                <h2 class="card-title">Título del post</h2>
+                <p class="card-description">Descripción del post</p>
+                <span class="read-time">1 MIN READ</span>
+            </article>
+            <article class="card">
+                <img src="img/imagePrueba.jpg" alt="Post image 4" class="card-image">
+                <h2 class="card-title">Título del post</h2>
+                <p class="card-description">Descripción del post</p>
+                <span class="read-time">1 MIN READ</span>
+            </article>
+        </section>
+        <section class="team-info">
+            <div class="team-description">
+                <div>
+                    <h2>Notas Visudo</h2>
+                    <span>La mejor información de este blog es gracias a nuestro equipo de trabajo</span>
+                </div>
+            </div>
+            <button class="view-team-button" >Ver Integrantes</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Visudos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

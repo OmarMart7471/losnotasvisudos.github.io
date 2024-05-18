@@ -1,0 +1,187 @@
+:root {
+    --color-background: #f7fafc;
+    --color-white: #fff;
+    --color-black-translucent: rgba(0, 0, 0, 0.5);
+    --color-text-primary: #23145b;
+    --color-gray-text: #4a5568;
+    --color-link-hover: #1ca39e; 
+    --color-footer-background: #09456c;
+    --color-header-background: #160d18; 
+    --color-highlight: #026f6e; 
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header {
+    background-color: var(--color-header-background);
+    color: var(--color-white);
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.header .nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.header .nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+}
+
+.header .nav a:hover {
+    color: var(--color-link-hover);
+}
+
+.main-content {
+    padding: 3rem 0;
+}
+
+.blog-post {
+    background-color: var(--color-white);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+}
+
+.blog-post h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post p {
+    font-size: 1.6rem;
+    color: var(--color-gray-text);
+    line-height: 1.5;
+}
+
+.post-content {
+    margin-bottom: 2rem;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+.float-right {
+    float: right;
+    margin-left: 1rem;
+    max-width: 50%;
+}
+
+.references {
+    margin-top: 2rem;
+}
+
+.references h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.references ul {
+    list-style: none;
+    padding: 0;
+}
+
+.references ul li {
+    margin-bottom: 0.5rem;
+}
+
+.references ul li a {
+    color: var(--color-link-hover);
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.references ul li a:hover {
+    text-decoration: underline;
+}
+
+.recommendations {
+    padding: 3rem 0;
+    background-color: var(--color-background);
+}
+
+.recommendations h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--color-white);
+    padding: 2rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1.4rem;
+    color: var(--color-gray-text);
+}
+
+.card .read-more {
+    color: var(--color-link-hover);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card .read-more:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: var(--color-footer-background);
+    color: var(--color-white);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
