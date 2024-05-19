@@ -133,6 +133,20 @@ body {
     transition: border-color 0.3s ease;
 }
 
+.card-image-mija {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 70%;
+    margin-bottom: 1.5rem;
+    border: 7px solid var(--color-highlight);
+    transition: border-color 0.3s ease;
+}
+
+.card:hover .card-image-mija {
+    border-color: #39FF14;
+}
+
 .card:hover .card-image {
     border-color: #f0c710;
 }
