@@ -115,12 +115,14 @@ body {
 
 .featured-title {
     font-size: 2.4rem;
+    text-align: center;
     color: var(--color-text-primary);
     margin: 0 0 1rem 0;
 }
 
 .featured-description {
     font-size: 1.6rem;
+    text-align: justify;
     color: var(--color-gray-text);
 }
 
@@ -182,6 +184,7 @@ body {
 
 .card-description {
     font-size: 1.4rem;
+    text-align: justify;
     color: var(--color-gray-text);
 }
 
