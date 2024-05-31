@@ -146,6 +146,7 @@ body {
     background-color: var(--color-highlight);
     color: var(--color-white);
     border: none;
+    text-decoration: none;
     border-radius: 0.8rem;
     padding: 0.8rem 1.6rem;
     font-size: 1.4rem;
@@ -169,6 +170,12 @@ body {
     padding: 2rem;
     box-shadow: 0 4px 6px var(--color-black-translucent);
     border-radius: 0.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 8px 12px var(--color-black-translucent);
 }
 
 .card-image {
@@ -186,6 +193,19 @@ body {
     font-size: 1.4rem;
     text-align: justify;
     color: var(--color-gray-text);
+}
+
+.card-button {
+    font-size: 1.4rem;
+    color: var(--color-highlight);
+    text-decoration: none;
+    margin-top: auto;
+    align-self: flex-start;
+    transition: color 0.3s ease;
+}
+
+.card-button:hover {
+    color: var(--color-link-hover);
 }
 
 .read-time {
