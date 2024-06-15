@@ -229,6 +229,7 @@ ul {
     text-align: center;
     margin-top: auto;
 }
+<<<<<<< HEAD
 .page-sections {
     padding: 20px 0;
 }
@@ -278,3 +279,5 @@ ul {
     order: 1; /* Imagen a la izquierda en secciones pares */
     text-align: left; /* Alinear la imagen a la izquierda */
 }
+=======
+>>>>>>> main
