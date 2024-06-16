@@ -229,3 +229,55 @@ ul {
     text-align: center;
     margin-top: auto;
 }
+<<<<<<< HEAD
+.page-sections {
+    padding: 20px 0;
+}
+
+.page-section {
+    margin-bottom: 20px;
+}
+
+.page-section h2,
+.page-section h3 {
+    margin-bottom: 10px;
+    color: #0779e4;
+}
+
+.two-column {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.two-column .text {
+    flex: 1;
+    padding: 20px;
+    order: 1; /* Texto a la izquierda por defecto */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.two-column .image {
+    flex: 1;
+    padding: 20px;
+    order: 2; /* Imagen a la derecha por defecto */
+    text-align: right; /* Alinear la imagen a la derecha */
+}
+
+.two-column .image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustar el orden para secciones pares e impares */
+.page-section:nth-child(even) .two-column .text {
+    order: 2; /* Texto a la derecha en secciones pares */
+    text-align: right; /* Alinear el texto a la derecha */
+}
+
+.page-section:nth-child(even) .two-column .image {
+    order: 1; /* Imagen a la izquierda en secciones pares */
+    text-align: left; /* Alinear la imagen a la izquierda */
+}
+=======
+>>>>>>> main
